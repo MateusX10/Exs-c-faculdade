@@ -1,57 +1,57 @@
 // Ex 04
-// Função : Escrever um algoritmo que leia o nome de um vendedor, o seu salário fixo e //o total de vendas efetuadas 
-//por ele no mês (em dinheiro). Sabendo que este vendedor ganha 15% de comissão //sobre suas vendas efetuadas, 
-//informar o  seu nome, o salário fixo e salário no final do mês
-// Autor : EU
-// Data :        
-// Seção de Declarações 
+// FunÃ§Ã£o : Escrever um algoritmo que leia o nome de um vendedor, o seu salÃ¡rio fixo e //o total de vendas efetuadas 
+//por ele no mÃªs (em dinheiro). Sabendo que este vendedor ganha 15% de comissÃ£o //sobre suas vendas efetuadas, 
+//informar o  seu nome, o salÃ¡rio fixo e salÃ¡rio no final do mÃªs
+// Autor :  Mateus Henrique de Souza Medeiros (apenas comentei o cÃ³digo, o cÃ³digo em si nÃ£o fui eu quem desenvolveu)
+// Data : 13/02/23 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 
 
-//biblitoeca para a manipulação de teclado e mouse
+//biblitoeca para a manipulaÃ§Ã£o de teclado e mouse
 #include <stdio.h>
 //I/O do console
 #include <conio.h>
-//Biblioteca que permite o uso de métodos matemáticos
+//Biblioteca que permite o uso de mÃ©todos matemÃ¡ticos
 #include <math.h>
-//Entrada e saída de dados
+//Entrada e saÃ­da de dados
 #include <iostream>
 
-//Função principal
+//FunÃ§Ã£o principal
 main()
 {	
-	//Define uma variável do tipo str/char de até 100 caracters
+	//Define uma variÃ¡vel do tipo str/char de atÃ© 100 caracters
       char nome[100];
-      //Define 4 variáveis do tipo ponto flutuante
+      //Define 4 variÃ¡veis do tipo ponto flutuante
       float salario,vendas,comissao,salariofinal;
       // Inicio comandos
       //Printa na tela e pede ao user o nome do vendedor
       printf("Digite nome vendedor:");
-      //Função para o input de dados do usuário (nome)
+      //FunÃ§Ã£o para o input de dados do usuÃ¡rio (nome)
       scanf("%s",&nome);
-      //Pede o salário 
+      //Pede o salÃ¡rio 
       printf("Digite Salario fixo:");
-      //Entrada de dados do salário
+      //Entrada de dados do salÃ¡rio
       scanf("%f",&salario);
       //Pede o total de vendas
       printf("Digite Total vendas (Mes):");
       //Entrada de dados para o "total de vendas"
       scanf("%f",&vendas);
-      //Faz cálculo - comissão
+      //Faz cÃ¡lculo - comissÃ£o
       comissao=(0,15*vendas);
-      //Calcula salário final
+      //Calcula salÃ¡rio final
       salariofinal=(salario+comissao);
       // Resultados
-      //Printa na tela algo estéticamente bonito pro programa
+      //Printa na tela algo estÃ©ticamente bonito pro programa
       printf("---------------------------------\n");
       //Printa nome
       printf("Nome:%s\n",nome);
-      //Escreve na tela o salário (fixo)
+      //Escreve na tela o salÃ¡rio (fixo)
       printf("Salario Fixo:%f\n",salario);
-      // Imprime na tela o salário (mensal???)
+      // Imprime na tela o salÃ¡rio (mensal???)
       printf("Salario Mes:%f\n",salariofinal);
       //Printa mais caracters esteticamente atraentes para o programa
       printf("---------------------------------");
-      //Dá uma pausa no programa
+      //DÃ¡ uma pausa no programa
       system("PAUSE > null");  
       }
 
