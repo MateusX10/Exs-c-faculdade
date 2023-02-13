@@ -1,46 +1,46 @@
 //algoritmo "ex2"
-// FunÁ„o : FaÁa um algoritmo que receba dois n˙meros e ao final mostre a soma, //subtraÁ„o, 
-// multiplicaÁ„o e a divis„o dos n˙meros lidos.
-// Autor : EU
-// Data :        
-// SeÁ„o de DeclaraÁıes
+// Fun√ß√£o : Fa√ßa um algoritmo que receba dois n√∫meros e ao final mostre a soma, //subtra√ß√£o, 
+// multiplica√ß√£o e a divis√£o dos n√∫meros lidos.
+// Autor :  Mateus Henrique de Souza Medeiros (apenas comentei o c√≥digo, o c√≥digo em si n√£o fui eu quem desenvolveu)
+// Data : 13/02/23 
+// Se√ß√£o de Declara√ß√µes
 
-// Biblioteca de manipulaÁ„o de mouse e teclado
+// Biblioteca de manipula√ß√£o de mouse e teclado
 #include <stdio.h>
 //Fornece I/O de console
 #include <conio.h>
-//Biblioteca que permite a utilizaÁ„o de funÁıes matem·ticas
+//Biblioteca que permite a utiliza√ß√£o de fun√ß√µes matem√°ticas
 #include <math.h>
-//biblioteca de entrada e saÌda de dados
+//biblioteca de entrada e sa√≠da de dados
 #include <iostream>
 
-//funÁ„o principal
+//fun√ß√£o principal
 main()
       {
-    //Define 2 vari·veis de ponto flutuante
+    //Define 2 vari√°veis de ponto flutuante
       float n1,n2;
       // Inicio Comandos
       //imprime algo na tela
       printf("==============  + - x / ==============\n");
-      //Imprime na tela uma mensagem pedindo para o usu·rio digitar um valor
+      //Imprime na tela uma mensagem pedindo para o usu√°rio digitar um valor
       printf("Informe o Primeiro valor: ");
-      //FunÁ„o para o input de dados por parte do usu·rio
+      //Fun√ß√£o para o input de dados por parte do usu√°rio
       scanf("%f",&n1);
-      //Imprime na tela uma mensagem pedindo para o usu·rio digitar um valor
+      //Imprime na tela uma mensagem pedindo para o usu√°rio digitar um valor
       printf("Informe o Segundo valor: ");
-      //Faz exatamente o mesmo que o scanf anterior, mas com vari·veis diferentes a qual o valor ser· atribuÌdo
+      //Faz exatamente o mesmo que o scanf anterior, mas com vari√°veis diferentes a qual o valor ser√° atribu√≠do
       scanf("%f",&n2);
       //Imprime na tela uma mensagem com o intuito de deixar o programa mais belo
       printf("============== <>HADUKEN !<> ==============\n");
       //Printa na tela a soma entre n1 e n2
       printf("\nSOMA: %f",n1+n2);
-      //Printa na tela o resultado da subtraÁ„o entre n1 e n2
+      //Printa na tela o resultado da subtra√ß√£o entre n1 e n2
       printf("\nSUBTRACAO: %f",n1-n2);
-      //Imprime na tela a multiplicaÁ„o de ambas as vars
+      //Imprime na tela a multiplica√ß√£o de ambas as vars
       printf("\nMULTIPLICACAO: %f",n1*n2);
-      //Divis„o de ambas as vars
+      //Divis√£o de ambas as vars
       printf("\nDIVISAO: %f",n1/n2);
-      //D· um "pause" no programa 
+      //D√° um "pause" no programa 
       system("PAUSE > null"); 
       }
 
