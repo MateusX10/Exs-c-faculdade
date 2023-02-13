@@ -1,12 +1,12 @@
 //algoritmo "ex12"
-/* FunÁ„o : O custo ao consumidor de um carro novo È a soma do custo de f·brica 
+/* Fun√ß√£o : O custo ao consumidor de um carro novo √© a soma do custo de f√°brica 
 com a percentagem do distribuidor e dos impostos (aplicados, primeiro os impostos 
-sobre o custo de f·brica, e depois a percentagem do distribuidor sobre o resultado). 
+sobre o custo de f√°brica, e depois a percentagem do distribuidor sobre o resultado). 
 Supondo que a percentagem do distribuidor seja de 28% e os impostos 45%. 
-Escrever um algoritmo que leia o custo de f·brica de um carro e informe o custo ao consumidor do mesmo. */
-// Autor : EU
-// Data :        
-// SeÁ„o de DeclaraÁıes
+Escrever um algoritmo que leia o custo de f√°brica de um carro e informe o custo ao consumidor do mesmo. */
+// Autor :  Mateus Henrique de Souza Medeiros (apenas comentei o c√≥digo, o c√≥digo em si n√£o fui eu quem desenvolveu)
+// Data : 13/02/23     
+// Se√ß√£o de Declara√ß√µes
 
 #include <stdio.h>
 #include <conio.h>
