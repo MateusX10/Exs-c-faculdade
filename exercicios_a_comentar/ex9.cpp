@@ -1,41 +1,41 @@
 //algoritmo "ex9"
-// Função : Faça um algoritmo que receba um valor que foi depositado e exiba o valor //com rendimento após um mês.
-// Considere fixo o juro da poupança em 0,70% a. m.
-// Autor :Renan (ChuckBerry)
+// FunÃ§Ã£o : FaÃ§a um algoritmo que receba um valor que foi depositado e exiba o valor //com rendimento apÃ³s um mÃªs.
+// Considere fixo o juro da poupanÃ§a em 0,70% a. m.
+// Autor :Renan (ChuckBerry), Mateus Henrique de Souza Medeiros (apenas comentei o cÃ³digo)
 // Data :        
-// Seção de Declarações
+// SeÃ§Ã£o de DeclaraÃ§Ãµes
 
 //Biblioteca utilizada para manipular mouse e teclado
 #include <stdio.h>
 //Biblioteca usada para a I/O do controle
 #include <conio.h>
-//Biblioteca com funções matemáticas úteis
+//Biblioteca com funÃ§Ãµes matemÃ¡ticas Ãºteis
 #include <math.h>
-//Entrada e saída de dados
+//Entrada e saÃ­da de dados
 #include <iostream>
 
 
 //Main function
 main()
       {
-      	//Declara 2 variáveis do tipo ponto flutuante
+      	//Declara 2 variÃ¡veis do tipo ponto flutuante
       float dep,us;
-		//Declara outra variável do tipo flutuante, já atribuindo um valor a ela
+		//Declara outra variÃ¡vel do tipo flutuante, jÃ¡ atribuindo um valor a ela
       float juros=0.7;
       // Inicio Comandos
-      //Um cabeçalho 
+      //Um cabeÃ§alho 
       printf("============== Juros from HELL ==============\n");
-      //Imprime na tela uma mensagem pedindo ao usuário que digitar o valor depositado
+      //Imprime na tela uma mensagem pedindo ao usuÃ¡rio que digitar o valor depositado
       printf("Digite o valor depositado: ");
-      //Função usada para o usuário fazer o input de dados para a variável "dep"
+      //FunÃ§Ã£o usada para o usuÃ¡rio fazer o input de dados para a variÃ¡vel "dep"
       scanf("%f",&dep);
-      //Mais um título.Isso de fato deixa o programa mais satisfatório de executar
+      //Mais um tÃ­tulo.Isso de fato deixa o programa mais satisfatÃ³rio de executar
       printf("============== <>Juros<> ==============\n");
       //Printa na tela o rendimento (juros * dep)
       printf("Rendimento:%f\n",juros*dep);
-      //O último título
+      //O Ãºltimo tÃ­tulo
       printf("============== <>Juros<> ==============\n");
-      //Dá uma pausa no sistema
+      //DÃ¡ uma pausa no sistema
       system("PAUSE > null"); 
       }
 
