@@ -1,43 +1,44 @@
 //algoritmo "ex21"
-// FunÁ„o : Escrever um algoritmo que leia os dados de N pessoas (nome, sexo, idade e sa˙de)
-// e informe se est· apta ou n„o para cumprir o serviÁo militar obrigatÛrio. Informe os totais.
-// Autor :  EU
-// Data :          
-// SeÁ„o de DeclaraÁıes 
+// Fun√ß√£o : Escrever um algoritmo que leia os dados de N pessoas (nome, sexo, idade e sa√∫de)
+// e informe se est√° apta ou n√£o para cumprir o servi√ßo militar obrigat√≥rio. Informe os totais.
+// Autor :  Mateus Henrique de Souza Medeiros (apenas comentei o c√≥digo, o c√≥digo em si n√£o fui eu quem desenvolveu)
+// Data : 13/02/23 
 
-//Bibliteca utilizada como entrada/saÌda de dados: teclado, mouse, printf, scanf...
+// Se√ß√£o de Declara√ß√µes 
+
+//Bibliteca utilizada como entrada/sa√≠da de dados: teclado, mouse, printf, scanf...
 #include <stdio.h>
 //Biblioteca que fornece I/O do console
 #include <conio.h>
-//Biblioteca matem·tica com funÁıes matem·ticas curiosamente ˙teis
+//Biblioteca matem√°tica com fun√ß√µes matem√°ticas curiosamente √∫teis
 #include <math.h>
-//Biblioteca matem·tica de entrada e saÌda de dados
+//Biblioteca matem√°tica de entrada e sa√≠da de dados
 #include <iostream>
-//Biblioteca que emula os comandos do DOS (windows) e  do terminal (linux): lhe permite manipular alguns comandos bin·rios do S.O
+//Biblioteca que emula os comandos do DOS (windows) e  do terminal (linux): lhe permite manipular alguns comandos bin√°rios do S.O
 #include <stdlib.h>
 
 //Main Funtion
 main()
       {
-    //Declara vari·vel tipo char de atÈ 15 caracteres
+    //Declara vari√°vel tipo char de at√© 15 caracteres
       char nome[15];
-      //Uma linha de cÛdigo comentada, extremamente funcional para o programa =).
+      //Uma linha de c√≥digo comentada, extremamente funcional para o programa =).
       //char sexo[1];
-      //Declara duas vari·veis do tipo char/str
+      //Declara duas vari√°veis do tipo char/str
       char sexo,opc; 
-      //Declara MUITAS vari·veis do tipo inteiro 
+      //Declara MUITAS vari√°veis do tipo inteiro 
       int idade,saude,totApto,nApto,programa,total;
       // Incio Comandos
-      //Atribui "S" a vari·vel "S"
+      //Atribui "S" a vari√°vel "S"
       opc  = 'S';
-      //Atribui "1" a vari·vel "programa"
+      //Atribui "1" a vari√°vel "programa"
       programa = 1;
-      //LaÁo de repetiÁ„o while: enquanto o conte˙do da vari·vel "programa" permanecer equivalente a "1", faÁa...
+      //La√ßo de repeti√ß√£o while: enquanto o conte√∫do da vari√°vel "programa" permanecer equivalente a "1", fa√ßa...
       while ( programa == 1 )
       {
-    //Incremente "1" a vari·vel "total"
+    //Incremente "1" a vari√°vel "total"
        total=total+1;     
-       //Imprime uma mensagem na tela pedindo ao usu·rio que digite um nome
+       //Imprime uma mensagem na tela pedindo ao usu√°rio que digite um nome
        printf("Digite o nome: ");
        scanf("%s",&nome);
        printf("Digite o sexo (M/F): ");
@@ -58,7 +59,7 @@ main()
                 //nApto=nApto+1; Desativado
                 printf("<><><><><><><>NAO APTO !!<><><><><><><>\n\n");
             }
-            // ContinuaÁ„o
+            // Continua√ß√£o
            printf("Finalizar OU Continuar !\n");
            printf("Deseja Continuar (S) Sim Ou (N) Nao\n");
            scanf("%s",&opc);
