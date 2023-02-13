@@ -1,74 +1,74 @@
 // Algoritimo 16
-// mÈdia (aritmÈtica), informar o nome e sua menÁ„o aprovado (media >= 7), Reprovado (media <= 5) e RecuperaÁ„o
+// m√©dia (aritm√©tica), informar o nome e sua men√ß√£o aprovado (media >= 7), Reprovado (media <= 5) e Recupera√ß√£o
 // (media entre 5.1 a 6.9).
-// Autor : EU
-// Data :        
-// SeÁ„o de DeclaraÁıes
+// Autor :  Mateus Henrique de Souza Medeiros (apenas comentei o c√≥digo, o c√≥digo em si n√£o fui eu quem desenvolveu)
+// Data : 13/02/23     
+// Se√ß√£o de Declara√ß√µes
 
-//ManipulaÁ„o do teclado e mouse
+//Manipula√ß√£o do teclado e mouse
 #include <stdio.h>
-//Entrada e saÌda de dados
+//Entrada e sa√≠da de dados
 #include <conio.h>
-//Biblioteca matem·tica que possui funÁıes matem·ticas
+//Biblioteca matem√°tica que possui fun√ß√µes matem√°ticas
 #include <math.h>
-//Bibloteca usada na entrada e saÌda de dados
+//Bibloteca usada na entrada e sa√≠da de dados
 #include <iostream>
 
-//FunÁ„o principal
+//Fun√ß√£o principal
 main()
       {
-    //Declara 4 vari·veis do tipo ponto flutuante
+    //Declara 4 vari√°veis do tipo ponto flutuante
       float nota,media,i,cal;
-      //Declara vari·vel do tipo char/str de atÈ 30 dÌgitos
+      //Declara vari√°vel do tipo char/str de at√© 30 d√≠gitos
       char nome[30];
       // Inicio Comandos
-      //Imprime um tÌtulo
+      //Imprime um t√≠tulo
       printf("==============Intervalos==============\n");
-      //Imprime uma mensagem e pede ao usu·rio que digite o nomedo aluno
+      //Imprime uma mensagem e pede ao usu√°rio que digite o nomedo aluno
       printf("Digite Nome ALUNO: \n");
-      //FunÁ„o na qual a entrada de dados por parte do usu·rio ser· efetivada, guardando o conte˙do deste input de dados na vari·vel "nome" --> nome do aluno
+      //Fun√ß√£o na qual a entrada de dados por parte do usu√°rio ser√° efetivada, guardando o conte√∫do deste input de dados na vari√°vel "nome" --> nome do aluno
       scanf("%s",&nome);
        {
-       	//Faz um for que far· a iteraÁ„o pedindo a nota do aluno 3 vezez
+       	//Faz um for que far√° a itera√ß√£o pedindo a nota do aluno 3 vezez
        for(i=1;i<=3;i++)
         {
         printf("Digite as notas");
         scanf("%f",&nota);
-        //Aqui n„o È calculada a mÈdia efetivamente, mas apenas a soma de todas as notas do laÁo È atribuÌda a vari·vel "mÈdia"
+        //Aqui n√£o √© calculada a m√©dia efetivamente, mas apenas a soma de todas as notas do la√ßo √© atribu√≠da a vari√°vel "m√©dia"
         media=((media)+(nota));
         }    
-        //Aqui finalmente calculamos a mÈdia efetivamente, atribuindo o resultado a vari·vel "mÈdia"
+        //Aqui finalmente calculamos a m√©dia efetivamente, atribuindo o resultado a vari√°vel "m√©dia"
            cal=((media)/(3.0));
            printf("Media: %1.1f\n",cal);                
-           //If a mÈdia for maior do que 7....
+           //If a m√©dia for maior do que 7....
            if(cal>=7.0)
            {
            	//Imprima o nome do aluno
            printf("Nome: %s\n",nome);
-           //Esse aluno foi aprovado, incrÌvel!
+           //Esse aluno foi aprovado, incr√≠vel!
            printf("Aprovado");
            }
-           //Sen„o (se o aluno tiver danÁado...)
+           //Sen√£o (se o aluno tiver dan√ßado...)
            else
            {
-           	//Se a mÈdia do aluno estiver no intervalo entra 5.2 e 6.8...
+           	//Se a m√©dia do aluno estiver no intervalo entra 5.2 e 6.8...
             if(cal>=5.1 && cal<=6.9)
             {
             //Imprima o nome do aluno
             printf("Nome: %s\n",nome);
             
-            //E infelizmente, vocÍ ficou de recuperaÁ„o, mas ainda pode recuperar!
+            //E infelizmente, voc√™ ficou de recupera√ß√£o, mas ainda pode recuperar!
             printf("Recuperacao");
             }
-            //Caso contr·rio...
+            //Caso contr√°rio...
             else
             {
-            //VocÍ foi reprovado
+            //Voc√™ foi reprovado
             printf("Reprovado\n");
             }
            }
          }
-         //D· um "pause" no sistema
+         //D√° um "pause" no sistema
          system("PAUSE > null");
        } 
 
