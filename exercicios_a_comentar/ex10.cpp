@@ -1,38 +1,38 @@
 //algoritmo "ex10"
-// FunÁ„o : A Loja Mam„o com AÁ˙car est· vendendo seus produtos em 5 (cinco) //prestaÁıes sem juros. FaÁa um 
-//algoritmo que  receba um valor de uma compra e mostre o valor das prestaÁıes.
-// Autor : EU
-// Data :        
-// SeÁ„o de DeclaraÁıes
+// Fun√ß√£o : A Loja Mam√£o com A√ß√∫car est√° vendendo seus produtos em 5 (cinco) //presta√ß√µes sem juros. Fa√ßa um 
+//algoritmo que  receba um valor de uma compra e mostre o valor das presta√ß√µes.
+// Autor :  Mateus Henrique de Souza Medeiros (apenas comentei o c√≥digo, o c√≥digo em si n√£o fui eu quem desenvolveu)
+// Data : 13/02/23 
+// Se√ß√£o de Declara√ß√µes
 
 
-//Biblioteca utilizada na manipulaÁ„o de teclado e mouse
+//Biblioteca utilizada na manipula√ß√£o de teclado e mouse
 #include <stdio.h>
 //Biblioteca de Input/output do console
 #include <conio.h>
-//Biblioteca com funÁıes matem·ticas ˙teis
+//Biblioteca com fun√ß√µes matem√°ticas √∫teis
 #include <math.h>
-//Biblioteca utilizada para a entrada e saÌda de dados
+//Biblioteca utilizada para a entrada e sa√≠da de dados
 #include <iostream>
 
 
 //Main Function
 main()
       {
-    //Declara uma vari·vel do tipo float
+    //Declara uma vari√°vel do tipo float
       float compra;
       // Inicio Comandos
-      //Imprime na tela um tÌtulo
+      //Imprime na tela um t√≠tulo
       printf("==============Mamao JHOW==============\n");
-      //Printa na tela uma mensagem que pede ao usu·rio que digite o valor da compra
+      //Printa na tela uma mensagem que pede ao usu√°rio que digite o valor da compra
       printf("Digite valor da compra: ");
-      //FunÁ„o para o input de dados do usu·rio, onde o  resultado ir· para a vari·vel "compra", do tipo ponto flutuante
+      //Fun√ß√£o para o input de dados do usu√°rio, onde o  resultado ir√° para a vari√°vel "compra", do tipo ponto flutuante
       scanf("%f",&compra);
-      //Imprime na tela outro tÌtulo de fato atraente.
+      //Imprime na tela outro t√≠tulo de fato atraente.
       printf("============== <>Parcelamento<> ==============\n");
       //Imprime parcelamento da compra em 5X
       printf("Em 5X:%f\n",compra/5);
-      //TÌtulo de fechamento
+      //T√≠tulo de fechamento
       printf("============== <>Parcelamento<> ==============\n");
       system("PAUSE > null"); 
       }
