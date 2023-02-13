@@ -1,37 +1,37 @@
 //algoritmo "ex8"
-// FunÁ„o : Elaborar um algoritmo que efetue a apresentaÁ„o do valor da convers„o em //real (R$) de um valor lido em dÛlar
-// (US$). O algoritmo dever· solicitar o valor da cotaÁ„o do dÛlar e tambÈm a //quantidade de dÛlares disponÌveis com o usu·rio.
-// Autor : EU
-// Data :        
-// SeÁ„o de DeclaraÁıes
+// Fun√ß√£o : Elaborar um algoritmo que efetue a apresenta√ß√£o do valor da convers√£o em //real (R$) de um valor lido em d√≥lar
+// (US$). O algoritmo dever√° solicitar o valor da cota√ß√£o do d√≥lar e tamb√©m a //quantidade de d√≥lares dispon√≠veis com o usu√°rio.
+// Autor :  Mateus Henrique de Souza Medeiros (apenas comentei o c√≥digo, o c√≥digo em si n√£o fui eu quem desenvolveu)
+// Data : 13/02/23 
+// Se√ß√£o de Declara√ß√µes
 
 
-//Biblioteca destina para a manipulaÁ„o do teclado/mouse
+//Biblioteca destina para a manipula√ß√£o do teclado/mouse
 #include <stdio.h>
 //Libre destinada a I/O de dados
 #include <conio.h>
-//Biblioteca muito ˙til para usar funÁıes matem·ticas
+//Biblioteca muito √∫til para usar fun√ß√µes matem√°ticas
 #include <math.h>
-//Biblioteca para a entrada e s·ida de dados
+//Biblioteca para a entrada e s√°ida de dados
 #include <iostream>
 
-//FunÁ„o principaÁ=l
+//Fun√ß√£o principa√ß=l
 main()
       {
     //Declara 2 VARs, ambas do tipo ponto flutuante
       float cotacao,us;
       // Inicio Comandos
-      //Um tÌtulo elegante
+      //Um t√≠tulo elegante
       printf("============== Money Like a Boss ==============\n");
-      //Imprime e pede ao usu·rio que inform a cotaÁ„o do dÛlar
+      //Imprime e pede ao usu√°rio que inform a cota√ß√£o do d√≥lar
       printf("Informe Cotacao DOLAR: ");
-      //FunÁ„o para a entrada de dados por parte do usu·rio, onde os dados ser„o armazenados na vari·vel "cotacao", do tipo float
+      //Fun√ß√£o para a entrada de dados por parte do usu√°rio, onde os dados ser√£o armazenados na vari√°vel "cotacao", do tipo float
       scanf("%f",&cotacao);
-      //Printa na tela uma mensagem e pede ao usu·rio que informe a quantidade de  dÛlar
+      //Printa na tela uma mensagem e pede ao usu√°rio que informe a quantidade de  d√≥lar
       printf("Informe Quantidade de dolar: ");
-      //Permite ao usu·rio fazer a entrada de dados atravÈs do teclado
+      //Permite ao usu√°rio fazer a entrada de dados atrav√©s do teclado
       scanf("%f",&us);
-      //Um tÌtulo
+      //Um t√≠tulo
       printf("============== <>Money<> ==============\n");
       printf("Conversao em (R$):%f\n",us/cotacao);
       printf("============== <>Money<> ==============\n");
