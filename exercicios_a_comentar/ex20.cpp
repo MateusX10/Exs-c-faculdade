@@ -1,110 +1,111 @@
 //algoritmo "ex20"
-// FunÁ„o : A concession·ria de veÌculos CARANGO VELHO est· vendendo os seus veÌculos com desconto. FaÁa um
- // algoritmo que calcule e exiba o valor do desconto e o valor a ser pago pelo cliente de v·rios carros. O desconto
- // dever· ser calculado de acordo com o ano do veÌculo. AtÈ 2000 - 12% e acima de 2000 - 7%. 
+// Fun√ß√£o : A concession√°ria de ve√≠culos CARANGO VELHO est√° vendendo os seus ve√≠culos com desconto. Fa√ßa um
+ // algoritmo que calcule e exiba o valor do desconto e o valor a ser pago pelo cliente de v√°rios carros. O desconto
+ // dever√° ser calculado de acordo com o ano do ve√≠culo. At√© 2000 - 12% e acima de 2000 - 7%. 
  
- //O sistema dever· perguntar se deseja continuar calculando desconto atÈ que a resposta seja: ì(N) N„oî . Informar total de carros com ano atÈ 2000 e total geral.
-// Autor :  EU
-// Data :          
-// SeÁ„o de DeclaraÁıes 
+ //O sistema dever√° perguntar se deseja continuar calculando desconto at√© que a resposta seja: ‚Äú(N) N√£o‚Äù . Informar total de carros com ano at√© 2000 e total geral.
+// Autor :  Mateus Henrique de Souza Medeiros (apenas comentei o c√≥digo, o c√≥digo em si n√£o fui eu quem desenvolveu)
+// Data : 13/02/23 
 
-//Biblioteca utilizada na manipulaÁ„o do teclado e mouse: entrada e saÌda de dados, como o printf e scanf, por exemplo
+// Se√ß√£o de Declara√ß√µes 
+
+//Biblioteca utilizada na manipula√ß√£o do teclado e mouse: entrada e sa√≠da de dados, como o printf e scanf, por exemplo
 #include <stdio.h>
 //Biblioteca utilizada no I/O de dados
 #include <conio.h>
-//Biblioteca matem·tica que possui funÁıes matem·ticas
+//Biblioteca matem√°tica que possui fun√ß√µes matem√°ticas
 #include <math.h>
-//Biblitoeca de entrada e saÌda de dados
+//Biblitoeca de entrada e sa√≠da de dados
 #include <iostream>
 //Essa biblioteca emula todos os comandos do DOS (windows) e do terminal (linux)
 #include <stdlib.h>
 
-//FunÁ„o principal
+//Fun√ß√£o principal
 
 main()
       {
       	
-    //Declara 2 vari·veis do tipo inteiro
+    //Declara 2 vari√°veis do tipo inteiro
       int programa,opc;
-      //Declara 3 vari·veis do tipo inteiro
+      //Declara 3 vari√°veis do tipo inteiro
       int ano,total,total2000;
-      //Delcara 3 vari·veis do tipo inteiro
+      //Delcara 3 vari√°veis do tipo inteiro
       float valor,valorFinal,desconto;
-      // SeÁ„o de comandos
-      //Valor "1" È atribuÌdo a vari·vei "programa"
+      // Se√ß√£o de comandos
+      //Valor "1" √© atribu√≠do a vari√°vei "programa"
       programa=='1';
-      //Enquanto a vari·vel "programa" for diferente de "2", faÁa...
+      //Enquanto a vari√°vel "programa" for diferente de "2", fa√ßa...
       while(programa!=2)
       {
     //Limpa a tela, semelhante ao comando "clear" do terminal no linux
       system("cls"); 
-      //Um cabeÁalho bonito
+      //Um cabe√ßalho bonito
       printf("<><><><><><><><><><><> Carango Velho <><><><><><><><><><><>\n");                
-      //Imprime na tela uma mensagem pedindo que o usu·rio informe o valor do carro
+      //Imprime na tela uma mensagem pedindo que o usu√°rio informe o valor do carro
       printf("Informe Valor do Carro:");
-      //FunÁ„o usada na entrada de dados, onde quem efetua essa aÁ„o È o usu·rio
+      //Fun√ß√£o usada na entrada de dados, onde quem efetua essa a√ß√£o √© o usu√°rio
       scanf("%f",&valor);
-      //Imprime na tela uma mensagem pedindo ao usu·rio que informe o ano do carro
+      //Imprime na tela uma mensagem pedindo ao usu√°rio que informe o ano do carro
       printf("Informe Ano do seu carro:");
-      //FunÁ„o utilizada como entrada de dados por parte do usu·rio
+      //Fun√ß√£o utilizada como entrada de dados por parte do usu√°rio
       scanf("%d",&ano);
-      //Printa um cabeÁalho
+      //Printa um cabe√ßalho
       printf("<><><><><><><><><><><> Carango Velho <><><><><><><><><><><>\n");
-      //If o ano for menor ou igual a 2000, faÁa...
+      //If o ano for menor ou igual a 2000, fa√ßa...
       if(ano<=2000)
         {
         //Atribui o valor "0.12" a VAR "desconto"
         desconto=0.12;
-        //Vari·vel2000 recebe o incremento de "1"
+        //Vari√°vel2000 recebe o incremento de "1"
         total2000=total2000+1;
         //Total recebe o incremento de "1"
         total=total+1;
         }
-        //Sen„o/caso contr·rio...
+        //Sen√£o/caso contr√°rio...
         else
         {
         //Desconto recebe o valor de "0.07"
         desconto=0.07;
-        //Vari·vel "total' recebe o incremento de "1"
+        //Vari√°vel "total' recebe o incremento de "1"
         total=total+1;
         }
         //Desconto recebe "desconto * valor"
         desconto=desconto*valor;
-        //Vari·velFinal recebe a vari·vel valor menos a vari·vel desconto
+        //Vari√°velFinal recebe a vari√°vel valor menos a vari√°vel desconto
         valorFinal=valor-desconto;
         //Escreve na tela o valor do carro com desconto
         printf("Valor do carro com desconto e:%f \n",valorFinal);
-        //Pergunta ao usu·rio se ele deseja continuar a utilizar o programa
+        //Pergunta ao usu√°rio se ele deseja continuar a utilizar o programa
         printf("Deseja continuar calculando? (10) Sim - (20) Nao\n");
-        //Recebe a entrada de dados do usu·rio, na qual o resultado vai para a vari·vel "Opc"
+        //Recebe a entrada de dados do usu√°rio, na qual o resultado vai para a vari√°vel "Opc"
         scanf("%d",&opc);
         //Escolhe "opc"
         switch(opc)
             {
-            //Caso seu conte˙do seja "10", faÁa...
+            //Caso seu conte√∫do seja "10", fa√ßa...
             case 10:
-            	//Vari·vel "programa" recebe o valor de "1"
+            	//Vari√°vel "programa" recebe o valor de "1"
                  programa=1;
                  //Imprime na tela uma mensagem
                  printf("Aperte ENTER para Continuar\n");
-                 //D· um "break" no switch case
+                 //D√° um "break" no switch case
                  break;
-            //Caso o conte˙do seja "20", ent„o...
+            //Caso o conte√∫do seja "20", ent√£o...
             case 20:
-            	//Vari·vel programa recebe "2"
+            	//Vari√°vel programa recebe "2"
                  programa=2;
                  //Imprima uma mensagem na tela
                  printf("Aperte ENTER para Finalizar\n");
-                 //"Quebra" a continuaÁ„o do switch case
+                 //"Quebra" a continua√ß√£o do switch case
                  break;
-            //Se tudo der errado/n„o funciona, ent„o o "default" ser· executado (como o else do if/else)
+            //Se tudo der errado/n√£o funciona, ent√£o o "default" ser√° executado (como o else do if/else)
             default:
             	//Imprime uma mensagem
                   printf("Opc Invalida Digite (10) S ou 20 (N)\n");
-                  //FunÁ„o utilizada na entrada de dados do usu·rio, alocando o resultado numa vari·vel
+                  //Fun√ß√£o utilizada na entrada de dados do usu√°rio, alocando o resultado numa vari√°vel
                   scanf("%d",&opc);
             }
-    //D· um "pause" no sistema
+    //D√° um "pause" no sistema
       system("PAUSE > null");  
   }
 }
