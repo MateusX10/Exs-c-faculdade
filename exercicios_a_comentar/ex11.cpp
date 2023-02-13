@@ -1,41 +1,41 @@
 //algoritmo "ex11"
-// FunÁ„o : FaÁa um algoritmo que receba o preÁo de custo de um produto e mostre o valor de venda. Sabe-se que o preÁo de
-// custo receber· um acrÈscimo de acordo com um percentual informado pelo usu·rio.
-// Autor : EU
-// Data :        
-// SeÁ„o de DeclaraÁıes
+// Fun√ß√£o : Fa√ßa um algoritmo que receba o pre√ßo de custo de um produto e mostre o valor de venda. Sabe-se que o pre√ßo de
+// custo receber√° um acr√©scimo de acordo com um percentual informado pelo usu√°rio.
+// Autor :  Mateus Henrique de Souza Medeiros (apenas comentei o c√≥digo, o c√≥digo em si n√£o fui eu quem desenvolveu)
+// Data : 13/02/23 
+// Se√ß√£o de Declara√ß√µes
 
-//Biblioteca muito utilizada em c para manipular as aÁıes do teclado e mouse
+//Biblioteca muito utilizada em c para manipular as a√ß√µes do teclado e mouse
 #include <stdio.h>
 //Biblioteca usada no I/O do console
 #include <conio.h>
-//Biblioteca matem·tica com funÁıes muito ˙teis
+//Biblioteca matem√°tica com fun√ß√µes muito √∫teis
 #include <math.h>
-//Biblioteca usada na entrada e saÌda de dados
+//Biblioteca usada na entrada e sa√≠da de dados
 #include <iostream>
 
-//Esta È a funÁ„o principal
+//Esta √© a fun√ß√£o principal
 main()
       {
-    //Declara 3 vari·veis do tipo ponto flutuante
+    //Declara 3 vari√°veis do tipo ponto flutuante
       float custo,percent,venda;
       // Inicio Comandos
-      //Escreve na tela um tÌtulo muito bonito
+      //Escreve na tela um t√≠tulo muito bonito
       printf("==============Produtos Like a Boss==============\n");
-      //Printa na tela uma mensagem pedindo ao usu·rio que digite o custo do produto
+      //Printa na tela uma mensagem pedindo ao usu√°rio que digite o custo do produto
       printf("Digite o custo do produto: ");
-      //Esta funÁ„o permitir· que o usu·rio efetue a entrada de dados para a vari·vel custo
+      //Esta fun√ß√£o permitir√° que o usu√°rio efetue a entrada de dados para a vari√°vel custo
       scanf("%f",&custo);
-      //TambÈm escreve na tela uma mensagem pedindo algo ao user, mmas deste vez o percentual de venda
+      //Tamb√©m escreve na tela uma mensagem pedindo algo ao user, mmas deste vez o percentual de venda
       printf("Digite o percentual para venda: ");
-      //E por sua vez, a funÁ„o abaixo permite o input de dados por parte do usu·rio para a vari·vel "porcent"
+      //E por sua vez, a fun√ß√£o abaixo permite o input de dados por parte do usu√°rio para a vari√°vel "porcent"
       scanf("%f",&percent);
-      //Calcula o percent (<<< acrÈscimo >>>)
+      //Calcula o percent (<<< acr√©scimo >>>)
       percent=((percent/100)*custo);
       //Valor da venda
       venda=percent+custo;
       printf("============== <>Acrescimo<> ==============\n");
-      printf("O valor de venda È: %f\n",venda);
+      printf("O valor de venda √©: %f\n",venda);
       printf("============== <>Acrescimo<> ==============\n");
       system("PAUSE > null"); 
       }
