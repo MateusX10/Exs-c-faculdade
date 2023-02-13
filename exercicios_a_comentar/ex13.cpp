@@ -1,25 +1,25 @@
 //algoritmo "ex13"
-// Função : Faça um algoritmo que receba um número e mostre uma mensagem caso este número seja maior que 10.
-// Autor :Renan (ChuckBerry)
+// FunÃ§Ã£o : FaÃ§a um algoritmo que receba um nÃºmero e mostre uma mensagem caso este nÃºmero seja maior que 10.
+// Autor :Renan (ChuckBerry), Mateus Henrique de Souza Medeiros (apenas comentei o cÃ³digo)
 // Data :        
-// Seção de Declarações
+// SeÃ§Ã£o de DeclaraÃ§Ãµes
 
-//Biblioteca utilizada na manipulação do mouse e teclado
+//Biblioteca utilizada na manipulaÃ§Ã£o do mouse e teclado
 #include <stdio.h>
 //Biblioteca utilizada no I/O do console
 #include <conio.h>
-//Biblioteca matematica com funções matemáticas
+//Biblioteca matematica com funÃ§Ãµes matemÃ¡ticas
 #include <math.h>
-//Biblioteca usada na entrada e saída de dados
+//Biblioteca usada na entrada e saÃ­da de dados
 #include <iostream>
 
 //Main function
 main()
       {
-    //Declara variável do tipo inteiro
+    //Declara variÃ¡vel do tipo inteiro
       int numero;
       // Inicio Comandos
-      //Um título ("maior")
+      //Um tÃ­tulo ("maior")
       printf("==============Maior==============\n");
       printf("Digite um numero: ");
       scanf("%d",&numero);
