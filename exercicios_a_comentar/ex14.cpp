@@ -1,51 +1,51 @@
 //algoritmo "ex14"
-// FunÁ„o : Escrever um algoritmo que leia dois valores inteiro distintos e informe qual È o maior.
-// Autor : EU
-// Data :        
-// SeÁ„o de DeclaraÁıes
+// Fun√ß√£o : Escrever um algoritmo que leia dois valores inteiro distintos e informe qual √© o maior.
+// Autor :  Mateus Henrique de Souza Medeiros (apenas comentei o c√≥digo, o c√≥digo em si n√£o fui eu quem desenvolveu)
+// Data : 13/02/23      
+// Se√ß√£o de Declara√ß√µes
 
-//Biblioteca muito usada em c para a manipulaÁ„o do teclado/mouse
+//Biblioteca muito usada em c para a manipula√ß√£o do teclado/mouse
 #include <stdio.h>
 //Biblioteca usada no I/O do console
 #include <conio.h>
-//Biblioteca matem·tica que detÈm funÁıes deveram uteis
+//Biblioteca matem√°tica que det√©m fun√ß√µes deveram uteis
 #include <math.h>
-//Biblioteca para a entrada e saÌda de dados 
+//Biblioteca para a entrada e sa√≠da de dados 
 #include <iostream>
 
 
-//Prazer, esta È a funÁ„o principal!
+//Prazer, esta √© a fun√ß√£o principal!
 main()
       {
-      //Declara 2 vari·veis "v1" e "v2" inteiras	
+      //Declara 2 vari√°veis "v1" e "v2" inteiras	
       int v1,v2;
       // Inicio Comandos
-      //Um tÌtulo
+      //Um t√≠tulo
       printf("==============Dois Valores MAIOR==============\n");
-      //Imprime uma mensagem pedindo ao usu·rio que digite um n˙mero
+      //Imprime uma mensagem pedindo ao usu√°rio que digite um n√∫mero
       printf("Digite Primeiro Valor: ");
-      //Por sua vez, o n˙mero digitado pelo usu·rio ser· armazenado na vari·vel v1
+      //Por sua vez, o n√∫mero digitado pelo usu√°rio ser√° armazenado na vari√°vel v1
       scanf("%d",&v1);
-      //Usu·rio È informado que precisa digitar um n˙mero
+      //Usu√°rio √© informado que precisa digitar um n√∫mero
       printf("Digite Segundo Valor: ");
-      //FunÁ„o usada na entrada de dados por parte do usu·rio, onde por sua vez o resultado do input de dados ser· armazenado numa vari·vel "v2"
+      //Fun√ß√£o usada na entrada de dados por parte do usu√°rio, onde por sua vez o resultado do input de dados ser√° armazenado numa vari√°vel "v2"
       scanf("%d",&v2);
       {
-    //"Se v1 for maior que v2, faÁa..."
+    //"Se v1 for maior que v2, fa√ßa..."
       if(v1>v2)
-      //...imprima "primeiro valor È maior"
+      //...imprima "primeiro valor √© maior"
       printf("Primeiro Valor e MAIOR\n");
-      //"Caso contr·rio/sen„o"
+      //"Caso contr√°rio/sen√£o"
       else
-      //"V2 È maior que v1?"
+      //"V2 √© maior que v1?"
         if(v2>v1)
-        //"Se sim, ent„o imprima apra mim que o segundo valor È maior
+        //"Se sim, ent√£o imprima apra mim que o segundo valor √© maior
         printf("Segundo Valor e MAIOR\n");
-        //Sen„o...
+        //Sen√£o...
         else
-        //Informe ao usu·rio que os valores s„o iguais
+        //Informe ao usu√°rio que os valores s√£o iguais
         printf("Valores IGUAIS\n");
-    //D· uma pausa no sistema
+    //D√° uma pausa no sistema
       system("Pause>null");
        }
       }
